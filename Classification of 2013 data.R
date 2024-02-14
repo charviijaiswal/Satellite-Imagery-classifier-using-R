@@ -11,9 +11,9 @@ library(rgdal)
 library(maptools)
 library(sf)
 library(terra)
-band1 <- raster("C:/Users/Charvi-Jaiswal/Desktop/LC08_L2SP_144051_20131107_20200912_02_T1/LC08_L2SP_144051_20131107_20200912_02_T1_SR_B1.tif")
+band1 <- raster("file path") #type the file path
 plot(band1)
-crop_extent <- readOGR("C:/Users/Charvi-Jaiswal/Downloads/Bengaluru/Bengaluru.shp")
+crop_extent <- readOGR("C:/Users/Bengaluru/Bengaluru.shp") #path of the shape file
 plot(crop_extent,
      main = "crop extent",
      axes = TRUE,
@@ -24,7 +24,7 @@ Mask_L_crop1 <- mask(L_crop1, crop_extent)
 plot(Mask_L_crop1)
 
 
-band2 <- raster("C:/Users/Charvi-Jaiswal/Desktop/LC08_L2SP_144051_20131107_20200912_02_T1/LC08_L2SP_144051_20131107_20200912_02_T1_SR_B2.tif")
+band2 <- raster("file path") #type the file path
 plot(band2)
 crop_extent <- readOGR("C:/Users/Charvi-Jaiswal/Downloads/Bengaluru/Bengaluru.shp")
 plot(crop_extent,
@@ -36,30 +36,28 @@ plot(L_crop2, main = "Cropped ")
 Mask_L_crop2 <- mask(L_crop2, crop_extent)
 plot(Mask_L_crop2)
 
-band3 <- raster("C:/Users/Charvi-Jaiswal/Desktop/LC08_L2SP_144051_20131107_20200912_02_T1/LC08_L2SP_144051_20131107_20200912_02_T1_SR_B3.tif")
+band3 <- raster("file path") #type the file path
 plot(band3)
 L_crop3 <- crop(band3, crop_extent)
 plot(L_crop3, main = "Cropped ")
 Mask_L_crop3 <- mask(L_crop3, crop_extent)
 plot(Mask_L_crop3)
 
-band4 <- raster("C:/Users/Charvi-Jaiswal/Desktop/LC08_L2SP_144051_20131107_20200912_02_T1/LC08_L2SP_144051_20131107_20200912_02_T1_SR_B4.tif")
+band4 <- raster("file path") #type the file path
 plot(band4)
 L_crop4 <- crop(band4, crop_extent)
 plot(L_crop4, main = "Cropped ")
 Mask_L_crop4 <- mask(L_crop4, crop_extent)
 plot(Mask_L_crop4)
 
-band5 <- raster("C:/Users/Charvi-Jaiswal/Desktop/LC08_L2SP_144051_20131107_20200912_02_T1/LC08_L2SP_144051_20131107_20200912_02_T1_SR_B5.tif")
-
+band5 <- raster("file path") #type the file path
 plot(band5)
 L_crop5 <- crop(band5, crop_extent)
 plot(L_crop5, main = "Cropped ")
 Mask_L_crop5 <- mask(L_crop5, crop_extent)
 plot(Mask_L_crop5)
 
-band6 <- raster("C:/Users/Charvi-Jaiswal/Desktop/LC08_L2SP_144051_20131107_20200912_02_T1/LC08_L2SP_144051_20131107_20200912_02_T1_SR_B6.tif")
-
+band6 <- raster("file path") #type the file path
 plot(band6)
 
 L_crop6 <- crop(band6, crop_extent)
@@ -67,7 +65,7 @@ plot(L_crop6, main = "Cropped ")
 Mask_L_crop6 <- mask(L_crop6, crop_extent)
 plot(Mask_L_crop6)
 
-band7 <- raster("C:/Users/Charvi-Jaiswal/Desktop/LC08_L2SP_144051_20131107_20200912_02_T1/LC08_L2SP_144051_20131107_20200912_02_T1_SR_B7.tif")
+band7 <-raster("file path") #type the file path
 plot(band7)
 L_crop7 <- crop(band7, crop_extent)
 plot(L_crop7, main = "Cropped ")
@@ -75,7 +73,7 @@ Mask_L_crop7 <- mask(L_crop7, crop_extent)
 plot(Mask_L_crop7)
 
 
-band10 <- raster("C:/Users/Charvi-Jaiswal/Desktop/LC08_L2SP_144051_20131107_20200912_02_T1/LC08_L2SP_144051_20131107_20200912_02_T1_ST_B10.tif")
+band10 <- raster("file path") #type the file path
 plot(band10)
 L_crop10 <- crop(band10, crop_extent)
 plot(L_crop10, main = "Cropped ")
